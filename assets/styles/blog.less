@@ -1,0 +1,107 @@
+@import "variables.less";
+
+body
+{
+  font-family: "Play","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: @light;
+  background-color: darken(@dark,20);
+}
+
+a {
+  color: @primary;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: lighten(@primary,10%);
+  }
+}
+
+hr
+{
+  margin: 0 -15px 5px -15px;
+
+}
+
+.router
+{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2vmin;
+}
+
+.typewriter
+{
+  font-family: "Special Elite","Courier New", Courier, monospace;
+}
+
+.title
+{
+  font-size: 4vmin;
+}
+
+.author
+{
+  line-height: 2em;
+  font-size: 1.75vmin;
+  margin-top: 25px;
+  color: darken(@light,35);
+}
+
+.avatar
+{
+  display: block;
+  width: @avatar-size;
+  height: @avatar-size;
+  margin-right: 10px;
+  border-radius: @avatar-size;
+}
+
+//header
+.jumbotron
+{
+  height: 170px;
+  line-height: 2em;
+  background: url(/assets/images/bg90.jpg) no-repeat bottom center scroll;
+  background-size: cover;
+  background-position: center;
+  font-size: 5vmin;
+}
+
+//index
+.excerpt
+{
+  font-size: 2vmin;
+}
+
+.posts
+{
+  & .post
+  {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.post
+{
+  text-align: justify;
+  & .title
+  {
+    font-weight: 700;
+  }
+}
+
+//post
+.content
+{
+  padding-top: 25px;
+  font-size: 2.5vmin;
+  padding-bottom: 25px;
+  text-align: justify;
+}
+

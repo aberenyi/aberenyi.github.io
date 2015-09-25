@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
-<section class="content-section text-center">
-  <div class="post">
-    <h1>{{ page.title }}</h1>
-    <div class="col-lg-8 col-lg-offset-2">
-      {{content}}
-      <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    </div>
+<div class="router">
+  <a href="{{site.url}}">
+    <i class="fa fa-home"></i>
+    Home</a>
+</div>
+<div class="post container">
+  <div class="row">
+    <div class="title text-center">{{ page.title }}</div>
+    <div class="content">{{content}}</div>
   </div>
-</section>
+</div>
