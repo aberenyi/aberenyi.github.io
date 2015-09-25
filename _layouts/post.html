@@ -10,5 +10,8 @@ layout: default
   <div class="row">
     <div class="title text-center">{{ page.title }}</div>
     <div class="content">{{content}}</div>
+    {% if page.disqus %}
+      {% include disqus.html %}
+    {% endif %}
   </div>
 </div>
