@@ -1,4 +1,4 @@
-var CACHE_NAME = 'cache-2016083114'
+var CACHE_NAME = 'cache-2016083115'
 
 self.addEventListener('install', function(event)
 {
