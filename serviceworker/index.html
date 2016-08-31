@@ -5,14 +5,14 @@
     <title>ServiceWorker Test</title>
 </head>
 <body>
-  <img src="/assets/img/KennyMcCormick.png" alt="Kenny">
+  <img src="/assets/images/KennyMcCormick.png" alt="Kenny">
 </body>
 <script>
   if ('serviceWorker' in navigator)
   {
     navigator
       .serviceWorker
-      .register('./sw.js', {scope: './'})
+      .register('/serviceworker/sw.js', {scope: '/serviceworker'})
       .then(function (registration)
       {
         // Registration was successful
